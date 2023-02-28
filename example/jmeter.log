@@ -1,0 +1,18 @@
+2023-02-28 11:00:42,826 WARN o.a.j.u.JMeterUtils: Exception 'null' occurred when fetching String property:'sampleresult.default.encoding', defaulting to: ISO-8859-1
+2023-02-28 11:00:42,850 WARN o.a.j.u.JMeterUtils: Exception 'null' occurred when fetching String property:'jmeterPlugin.prefixPlugins'
+2023-02-28 11:00:42,852 INFO k.a.j.PluginsCMDWorker: Using JMeterPluginsCMD v. N/A
+2023-02-28 11:00:42,862 INFO o.a.j.u.JMeterUtils: Setting Locale to it_IT
+2023-02-28 11:00:42,898 ERROR o.a.j.u.JMeterUtils: Could not find resources for 'it_IT'
+2023-02-28 11:00:42,903 INFO k.a.j.JMeterPluginsUtils: Loading user properties from: C:\Users\serena.sensini\OneDrive - Dedalus S.p.A\Documenti\Apache JMeter\apache-jmeter-5.3\bin\user.properties
+2023-02-28 11:00:42,909 INFO k.a.j.JMeterPluginsUtils: Loading system properties from: C:\Users\serena.sensini\OneDrive - Dedalus S.p.A\Documenti\Apache JMeter\apache-jmeter-5.3\bin\system.properties
+2023-02-28 11:00:44,035 WARN o.a.j.g.ObjectTableModel: Header count=13 but classes count=11
+2023-02-28 11:00:44,035 WARN o.a.j.g.ObjectTableModel: Header count=13 but writeFunctor count=11
+2023-02-28 11:00:44,546 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2023-02-28 11:00:44,597 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2023-02-28 11:00:44,605 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2023-02-28 11:00:44,619 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2023-02-28 11:00:44,619 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to UTF-8
+2023-02-28 11:00:44,621 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2023-02-28 11:00:44,621 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2023-02-28 11:00:44,628 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2023-02-28 11:00:44,655 INFO k.a.j.v.AggregateReportGui: Saving CSV to C:\Users\serena.sensini\OneDrive - Dedalus S.p.A\Documenti\Apache JMeter\Esempi\pipeline\logs\aggregate-report.csv

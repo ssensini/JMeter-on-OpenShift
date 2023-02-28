@@ -1,2 +1,2 @@
-host,port,protocol
-repubblica.it,,https
+HOST,PORT,PROTOCOL,CONTEXT
+sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com,,http,healthcheck
