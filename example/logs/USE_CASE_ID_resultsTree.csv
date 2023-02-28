@@ -1,31 +1,373 @@
 timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
-2023/02/28 10:56:36.495,497,GET - Homepage,200,,Thread group name 1-1,text,true,,451,723,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,367,0,177
-2023/02/28 10:56:36.495,370,GET - Homepage-0,302,,Thread group name 1-1,,true,,209,361,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,367,0,177
-2023/02/28 10:56:36.869,123,GET - Homepage-1,200,,Thread group name 1-1,text,true,,242,362,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,120,0,0
-2023/02/28 10:56:38.294,1113,GET - Homepage,200,,Thread group name 1-2,text,true,,451,723,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,753,0,298
-2023/02/28 10:56:38.294,753,GET - Homepage-0,302,,Thread group name 1-2,,true,,209,361,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,753,0,298
-2023/02/28 10:56:39.048,359,GET - Homepage-1,200,,Thread group name 1-2,text,true,,242,362,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,359,0,0
-2023/02/28 10:56:40.282,392,GET - Homepage,200,,Thread group name 1-3,text,true,,451,723,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,261,0,77
-2023/02/28 10:56:40.282,261,GET - Homepage-0,302,,Thread group name 1-3,,true,,209,361,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,261,0,77
-2023/02/28 10:56:40.543,131,GET - Homepage-1,200,,Thread group name 1-3,text,true,,242,362,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,131,0,0
-2023/02/28 10:56:42.277,418,GET - Homepage,200,,Thread group name 1-4,text,true,,451,723,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,220,0,49
-2023/02/28 10:56:42.277,220,GET - Homepage-0,302,,Thread group name 1-4,,true,,209,361,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,220,0,49
-2023/02/28 10:56:42.498,197,GET - Homepage-1,200,,Thread group name 1-4,text,true,,242,362,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,197,0,0
-2023/02/28 10:56:44.277,1056,GET - Homepage,200,,Thread group name 1-5,text,true,,451,723,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,361,0,178
-2023/02/28 10:56:44.277,361,GET - Homepage-0,302,,Thread group name 1-5,,true,,209,361,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,361,0,178
-2023/02/28 10:56:44.639,694,GET - Homepage-1,200,,Thread group name 1-5,text,true,,242,362,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,694,0,0
-2023/02/28 10:56:46.273,891,GET - Homepage,200,,Thread group name 1-6,text,true,,451,723,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,674,0,215
-2023/02/28 10:56:46.273,674,GET - Homepage-0,302,,Thread group name 1-6,,true,,209,361,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,674,0,215
-2023/02/28 10:56:46.946,218,GET - Homepage-1,200,,Thread group name 1-6,text,true,,242,362,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,218,0,0
-2023/02/28 10:56:48.272,426,GET - Homepage,200,,Thread group name 1-7,text,true,,451,723,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,303,0,37
-2023/02/28 10:56:48.272,303,GET - Homepage-0,302,,Thread group name 1-7,,true,,209,361,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,303,0,37
-2023/02/28 10:56:48.576,122,GET - Homepage-1,200,,Thread group name 1-7,text,true,,242,362,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,122,0,0
-2023/02/28 10:56:50.273,393,GET - Homepage,200,,Thread group name 1-8,text,true,,451,723,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,297,0,100
-2023/02/28 10:56:50.273,297,GET - Homepage-0,302,,Thread group name 1-8,,true,,209,361,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,297,0,100
-2023/02/28 10:56:50.570,96,GET - Homepage-1,200,,Thread group name 1-8,text,true,,242,362,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,96,0,0
-2023/02/28 10:56:52.268,893,GET - Homepage,200,,Thread group name 1-9,text,true,,451,723,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,595,0,284
-2023/02/28 10:56:52.268,595,GET - Homepage-0,302,,Thread group name 1-9,,true,,209,361,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,595,0,284
-2023/02/28 10:56:52.863,298,GET - Homepage-1,200,,Thread group name 1-9,text,true,,242,362,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,298,0,0
-2023/02/28 10:56:54.266,510,GET - Homepage,200,,Thread group name 1-10,text,true,,451,723,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,366,0,130
-2023/02/28 10:56:54.266,366,GET - Homepage-0,302,,Thread group name 1-10,,true,,209,361,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,366,0,130
-2023/02/28 10:56:54.633,143,GET - Homepage-1,200,,Thread group name 1-10,text,true,,242,362,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,143,0,0
+2022/08/16 11:28:15.219,132,POST - Login,400,Bad Request,Thread group name 1-1,text,false,,1712,374,1,1,https://www.google.com/,131,0,114
+2022/08/16 11:28:31.212,287,POST - Login,200,OK,Thread group name 1-1,text,true,,14984,294,1,1,https://www.google.com/,284,0,105
+2022/08/16 11:29:09.714,368,POST - Login,200,OK,Thread group name 1-1,text,true,,14998,294,1,1,https://www.google.com/,366,0,99
+2022/08/16 11:30:47.591,393,GET - Homepage,200,OK,Thread group name 1-1,text,true,,582399,590,1,1,https://www.repubblica.it/,184,0,130
+2022/08/16 11:30:47.591,184,GET - Homepage-0,301,Moved Permanently,Thread group name 1-1,,true,,516,293,1,1,https://repubblica.it/,184,0,130
+2022/08/16 11:30:47.777,207,GET - Homepage-1,200,OK,Thread group name 1-1,text,true,,581883,297,1,1,https://www.repubblica.it/,136,0,102
+2022/08/16 11:32:13.708,34495,GET - Homepage,Non HTTP response code: javax.net.ssl.SSLException,Non HTTP response message: Socket closed,Thread group name 1-1,text,false,,6421,613,1,1,https://consent.google.com/ml?continue=https://www.google.com/&gl=IT&m=0&pc=shp&uxe=eomtse&hl=it&src=1,512,0,391
+2022/08/16 11:32:13.708,512,GET - Homepage-0,301,Moved Permanently,Thread group name 1-1,text,true,,881,290,1,1,https://google.com/,512,0,391
+2022/08/16 11:32:14.222,322,GET - Homepage-1,302,Found,Thread group name 1-1,text,true,,1365,323,1,1,https://www.google.com/,322,0,83
+2022/08/16 11:32:14.546,33657,GET - Homepage-2,Non HTTP response code: javax.net.ssl.SSLException,Non HTTP response message: Socket closed,Thread group name 1-1,text,false,,4175,0,1,1,https://consent.google.com/ml?continue=https://www.google.com/&gl=IT&m=0&pc=shp&uxe=eomtse&hl=it&src=1,0,0,158
+2022/08/16 11:33:04.851,10203,GET - Homepage,Non HTTP response code: javax.net.ssl.SSLException,Non HTTP response message: Socket closed,Thread group name 1-1,text,false,,6420,613,1,1,https://consent.google.com/ml?continue=https://www.google.com/&gl=IT&m=0&pc=shp&uxe=eomtse&hl=it&src=1,206,0,85
+2022/08/16 11:33:04.851,206,GET - Homepage-0,301,Moved Permanently,Thread group name 1-1,text,true,,881,290,1,1,https://google.com/,206,0,85
+2022/08/16 11:33:05.058,224,GET - Homepage-1,302,Found,Thread group name 1-1,text,true,,1364,323,1,1,https://www.google.com/,224,0,83
+2022/08/16 11:33:05.283,9771,GET - Homepage-2,Non HTTP response code: javax.net.ssl.SSLException,Non HTTP response message: Socket closed,Thread group name 1-1,text,false,,4175,0,1,1,https://consent.google.com/ml?continue=https://www.google.com/&gl=IT&m=0&pc=shp&uxe=eomtse&hl=it&src=1,0,0,84
+2022/08/16 11:33:28.131,401,GET - Homepage,200,OK,Thread group name 1-1,text,true,,582603,590,1,1,https://www.repubblica.it/,161,0,110
+2022/08/16 11:33:28.131,161,GET - Homepage-0,301,Moved Permanently,Thread group name 1-1,,true,,516,293,1,1,https://repubblica.it/,161,0,110
+2022/08/16 11:33:28.293,239,GET - Homepage-1,200,OK,Thread group name 1-1,text,true,,582087,297,1,1,https://www.repubblica.it/,149,0,128
+2022/08/16 11:33:39.901,292,GET - Homepage,200,OK,Thread group name 1-1,text,true,,582476,590,1,1,https://www.repubblica.it/,113,0,62
+2022/08/16 11:33:39.901,113,GET - Homepage-0,301,Moved Permanently,Thread group name 1-1,,true,,516,293,1,1,https://repubblica.it/,113,0,62
+2022/08/16 11:33:40.015,178,GET - Homepage-1,200,OK,Thread group name 1-1,text,true,,581960,297,1,1,https://www.repubblica.it/,76,0,55
+2022/08/16 11:36:19.285,406,GET - Homepage,200,OK,Thread group name 1-1,text,true,,582389,590,1,1,https://www.repubblica.it/,171,0,117
+2022/08/16 11:36:19.285,171,GET - Homepage-0,301,Moved Permanently,Thread group name 1-1,,true,,516,293,1,1,https://repubblica.it/,171,0,117
+2022/08/16 11:36:19.457,234,GET - Homepage-1,200,OK,Thread group name 1-1,text,true,,581873,297,1,1,https://www.repubblica.it/,146,0,124
+2022/08/16 11:40:42.101,347,GET - Homepage,200,OK,Thread group name 1-1,text,true,,582365,590,1,1,https://www.repubblica.it/,169,0,115
+2022/08/16 11:40:42.101,169,GET - Homepage-0,301,Moved Permanently,Thread group name 1-1,,true,,516,293,1,1,https://repubblica.it/,169,0,115
+2022/08/16 11:40:42.271,177,GET - Homepage-1,200,OK,Thread group name 1-1,text,true,,581849,297,1,1,https://www.repubblica.it/,102,0,80
+2023/02/21 16:10:25.527,383,GET - Homepage,200,,Thread group name 1-1,text,true,,451,723,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,244,0,37
+2023/02/21 16:10:25.527,246,GET - Homepage-0,302,,Thread group name 1-1,,true,,209,361,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,244,0,37
+2023/02/21 16:10:25.778,132,GET - Homepage-1,200,,Thread group name 1-1,text,true,,242,362,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,132,0,0
+2023/02/21 16:11:24.361,340,GET - Homepage,200,,Thread group name 1-1,text,true,,451,723,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,214,0,47
+2023/02/21 16:11:24.361,214,GET - Homepage-0,302,,Thread group name 1-1,,true,,209,361,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,214,0,47
+2023/02/21 16:11:24.575,126,GET - Homepage-1,200,,Thread group name 1-1,text,true,,242,362,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,126,0,0
+2023/02/21 16:11:24.867,319,GET - Homepage,200,,Thread group name 1-2,text,true,,451,723,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,208,0,76
+2023/02/21 16:11:24.867,208,GET - Homepage-0,302,,Thread group name 1-2,,true,,209,361,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,208,0,76
+2023/02/21 16:11:25.075,111,GET - Homepage-1,200,,Thread group name 1-2,text,true,,242,362,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,111,0,0
+2023/02/21 16:11:25.360,304,GET - Homepage,200,,Thread group name 1-3,text,true,,451,723,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,197,0,38
+2023/02/21 16:11:25.360,197,GET - Homepage-0,302,,Thread group name 1-3,,true,,209,361,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,197,0,38
+2023/02/21 16:11:25.557,107,GET - Homepage-1,200,,Thread group name 1-3,text,true,,242,362,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,107,0,0
+2023/02/21 16:11:25.862,329,GET - Homepage,200,,Thread group name 1-4,text,true,,451,723,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,211,0,56
+2023/02/21 16:11:25.862,211,GET - Homepage-0,302,,Thread group name 1-4,,true,,209,361,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,211,0,56
+2023/02/21 16:11:26.073,118,GET - Homepage-1,200,,Thread group name 1-4,text,true,,242,362,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,118,0,0
+2023/02/21 16:11:26.362,312,GET - Homepage,200,,Thread group name 1-5,text,true,,451,723,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,194,0,78
+2023/02/21 16:11:26.362,194,GET - Homepage-0,302,,Thread group name 1-5,,true,,209,361,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,194,0,78
+2023/02/21 16:11:26.556,118,GET - Homepage-1,200,,Thread group name 1-5,text,true,,242,362,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,118,0,0
+2023/02/21 16:11:26.860,313,GET - Homepage,200,,Thread group name 1-6,text,true,,451,723,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,213,0,97
+2023/02/21 16:11:26.860,213,GET - Homepage-0,302,,Thread group name 1-6,,true,,209,361,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,213,0,97
+2023/02/21 16:11:27.073,100,GET - Homepage-1,200,,Thread group name 1-6,text,true,,242,362,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,100,0,0
+2023/02/21 16:11:27.361,325,GET - Homepage,200,,Thread group name 1-7,text,true,,451,723,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,247,0,44
+2023/02/21 16:11:27.361,247,GET - Homepage-0,302,,Thread group name 1-7,,true,,209,361,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,247,0,44
+2023/02/21 16:11:27.608,78,GET - Homepage-1,200,,Thread group name 1-7,text,true,,242,362,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,78,0,0
+2023/02/21 16:11:27.863,429,GET - Homepage,200,,Thread group name 1-8,text,true,,451,723,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,280,0,106
+2023/02/21 16:11:27.863,280,GET - Homepage-0,302,,Thread group name 1-8,,true,,209,361,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,280,0,106
+2023/02/21 16:11:28.143,149,GET - Homepage-1,200,,Thread group name 1-8,text,true,,242,362,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,149,0,0
+2023/02/21 16:11:28.362,260,GET - Homepage,200,,Thread group name 1-9,text,true,,451,723,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,199,0,70
+2023/02/21 16:11:28.362,199,GET - Homepage-0,302,,Thread group name 1-9,,true,,209,361,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,199,0,70
+2023/02/21 16:11:28.562,60,GET - Homepage-1,200,,Thread group name 1-9,text,true,,242,362,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,60,0,0
+2023/02/21 16:11:28.861,382,GET - Homepage,200,,Thread group name 1-10,text,true,,451,723,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,262,0,40
+2023/02/21 16:11:28.861,262,GET - Homepage-0,302,,Thread group name 1-10,,true,,209,361,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,262,0,40
+2023/02/21 16:11:29.123,120,GET - Homepage-1,200,,Thread group name 1-10,text,true,,242,362,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,120,0,0
+2023/02/21 16:11:29.361,318,GET - Homepage,200,,Thread group name 1-11,text,true,,451,723,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,221,0,35
+2023/02/21 16:11:29.361,221,GET - Homepage-0,302,,Thread group name 1-11,,true,,209,361,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,221,0,35
+2023/02/21 16:11:29.582,97,GET - Homepage-1,200,,Thread group name 1-11,text,true,,242,362,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,97,0,0
+2023/02/21 16:11:29.860,319,GET - Homepage,200,,Thread group name 1-12,text,true,,451,723,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,209,0,43
+2023/02/21 16:11:29.860,209,GET - Homepage-0,302,,Thread group name 1-12,,true,,209,361,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,209,0,43
+2023/02/21 16:11:30.069,110,GET - Homepage-1,200,,Thread group name 1-12,text,true,,242,362,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,109,0,0
+2023/02/21 16:11:30.361,295,GET - Homepage,200,,Thread group name 1-13,text,true,,451,723,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,190,0,34
+2023/02/21 16:11:30.361,190,GET - Homepage-0,302,,Thread group name 1-13,,true,,209,361,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,190,0,34
+2023/02/21 16:11:30.551,105,GET - Homepage-1,200,,Thread group name 1-13,text,true,,242,362,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,105,0,0
+2023/02/21 16:11:30.860,371,GET - Homepage,200,,Thread group name 1-14,text,true,,451,723,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,264,0,59
+2023/02/21 16:11:30.860,264,GET - Homepage-0,302,,Thread group name 1-14,,true,,209,361,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,264,0,59
+2023/02/21 16:11:31.124,107,GET - Homepage-1,200,,Thread group name 1-14,text,true,,242,362,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,107,0,0
+2023/02/21 16:11:31.361,342,GET - Homepage,200,,Thread group name 1-15,text,true,,451,723,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,243,0,44
+2023/02/21 16:11:31.361,243,GET - Homepage-0,302,,Thread group name 1-15,,true,,209,361,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,243,0,44
+2023/02/21 16:11:31.605,98,GET - Homepage-1,200,,Thread group name 1-15,text,true,,242,362,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,98,0,0
+2023/02/21 16:11:31.862,295,GET - Homepage,200,,Thread group name 1-16,text,true,,451,723,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,191,0,36
+2023/02/21 16:11:31.862,191,GET - Homepage-0,302,,Thread group name 1-16,,true,,209,361,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,191,0,36
+2023/02/21 16:11:32.052,105,GET - Homepage-1,200,,Thread group name 1-16,text,true,,242,362,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,105,0,0
+2023/02/21 16:11:32.360,309,GET - Homepage,200,,Thread group name 1-17,text,true,,451,723,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,199,0,79
+2023/02/21 16:11:32.360,199,GET - Homepage-0,302,,Thread group name 1-17,,true,,209,361,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,199,0,79
+2023/02/21 16:11:32.559,110,GET - Homepage-1,200,,Thread group name 1-17,text,true,,242,362,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,110,0,0
+2023/02/21 16:11:32.860,369,GET - Homepage,200,,Thread group name 1-18,text,true,,451,723,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,214,0,102
+2023/02/21 16:11:32.860,214,GET - Homepage-0,302,,Thread group name 1-18,,true,,209,361,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,214,0,102
+2023/02/21 16:11:33.074,155,GET - Homepage-1,200,,Thread group name 1-18,text,true,,242,362,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,155,0,0
+2023/02/21 16:11:33.359,314,GET - Homepage,200,,Thread group name 1-19,text,true,,451,723,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,196,0,67
+2023/02/21 16:11:33.359,196,GET - Homepage-0,302,,Thread group name 1-19,,true,,209,361,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,196,0,67
+2023/02/21 16:11:33.555,118,GET - Homepage-1,200,,Thread group name 1-19,text,true,,242,362,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,118,0,0
+2023/02/21 16:11:33.861,363,GET - Homepage,200,,Thread group name 1-20,text,true,,451,723,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,212,0,97
+2023/02/21 16:11:33.861,212,GET - Homepage-0,302,,Thread group name 1-20,,true,,209,361,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,212,0,97
+2023/02/21 16:11:34.073,151,GET - Homepage-1,200,,Thread group name 1-20,text,true,,242,362,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,151,0,0
+2023/02/24 11:14:20.838,392,GET - Homepage,200,,Thread group name 1-1,text,true,,451,723,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,275,0,122
+2023/02/24 11:14:20.838,278,GET - Homepage-0,302,,Thread group name 1-1,,true,,209,361,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,275,0,122
+2023/02/24 11:14:21.118,112,GET - Homepage-1,200,,Thread group name 1-1,text,true,,242,362,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,112,0,0
+2023/02/24 11:14:21.275,497,GET - Homepage,200,,Thread group name 1-2,text,true,,451,723,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,339,0,107
+2023/02/24 11:14:21.275,339,GET - Homepage-0,302,,Thread group name 1-2,,true,,209,361,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,339,0,107
+2023/02/24 11:14:21.614,158,GET - Homepage-1,200,,Thread group name 1-2,text,true,,242,362,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,158,0,0
+2023/02/24 11:14:21.775,467,GET - Homepage,200,,Thread group name 1-3,text,true,,451,723,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,310,0,123
+2023/02/24 11:14:21.775,310,GET - Homepage-0,302,,Thread group name 1-3,,true,,209,361,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,310,0,123
+2023/02/24 11:14:22.085,157,GET - Homepage-1,200,,Thread group name 1-3,text,true,,242,362,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,157,0,0
+2023/02/24 11:14:22.273,444,GET - Homepage,200,,Thread group name 1-4,text,true,,451,723,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,304,0,74
+2023/02/24 11:14:22.273,304,GET - Homepage-0,302,,Thread group name 1-4,,true,,209,361,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,304,0,74
+2023/02/24 11:14:22.577,140,GET - Homepage-1,200,,Thread group name 1-4,text,true,,242,362,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,140,0,0
+2023/02/24 11:14:22.773,487,GET - Homepage,200,,Thread group name 1-5,text,true,,451,723,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,349,0,78
+2023/02/24 11:14:22.773,349,GET - Homepage-0,302,,Thread group name 1-5,,true,,209,361,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,349,0,78
+2023/02/24 11:14:23.122,138,GET - Homepage-1,200,,Thread group name 1-5,text,true,,242,362,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,138,0,0
+2023/02/24 11:14:23.275,1043,GET - Homepage,200,,Thread group name 1-6,text,true,,451,723,3,3,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,447,0,173
+2023/02/24 11:14:23.275,447,GET - Homepage-0,302,,Thread group name 1-6,,true,,209,361,3,3,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,447,0,173
+2023/02/24 11:14:23.722,596,GET - Homepage-1,200,,Thread group name 1-6,text,true,,242,362,3,3,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,596,0,0
+2023/02/24 11:14:24.276,396,GET - Homepage,200,,Thread group name 1-8,text,true,,451,723,2,2,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,284,0,120
+2023/02/24 11:14:24.276,284,GET - Homepage-0,302,,Thread group name 1-8,,true,,209,361,2,2,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,284,0,120
+2023/02/24 11:14:23.785,886,GET - Homepage,200,,Thread group name 1-7,text,true,,451,723,2,2,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,697,0,533
+2023/02/24 11:14:24.560,112,GET - Homepage-1,200,,Thread group name 1-8,text,true,,242,362,2,2,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,112,0,0
+2023/02/24 11:14:23.785,697,GET - Homepage-0,302,,Thread group name 1-7,,true,,209,361,2,2,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,697,0,533
+2023/02/24 11:14:24.482,189,GET - Homepage-1,200,,Thread group name 1-7,text,true,,242,362,2,2,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,189,0,0
+2023/02/24 11:14:24.775,495,GET - Homepage,200,,Thread group name 1-9,text,true,,451,723,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,346,0,180
+2023/02/24 11:14:24.775,346,GET - Homepage-0,302,,Thread group name 1-9,,true,,209,361,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,346,0,180
+2023/02/24 11:14:25.122,148,GET - Homepage-1,200,,Thread group name 1-9,text,true,,242,362,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,148,0,0
+2023/02/24 11:14:25.274,535,GET - Homepage,200,,Thread group name 1-10,text,true,,451,723,2,2,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,400,0,203
+2023/02/24 11:14:25.274,400,GET - Homepage-0,302,,Thread group name 1-10,,true,,209,361,2,2,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,400,0,203
+2023/02/24 11:14:25.674,135,GET - Homepage-1,200,,Thread group name 1-10,text,true,,242,362,2,2,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,135,0,0
+2023/02/24 11:14:25.777,387,GET - Homepage,200,,Thread group name 1-11,text,true,,451,723,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,285,0,104
+2023/02/24 11:14:25.777,285,GET - Homepage-0,302,,Thread group name 1-11,,true,,209,361,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,285,0,104
+2023/02/24 11:14:26.062,102,GET - Homepage-1,200,,Thread group name 1-11,text,true,,242,362,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,102,0,0
+2023/02/24 11:14:26.275,491,GET - Homepage,200,,Thread group name 1-12,text,true,,451,723,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,288,0,121
+2023/02/24 11:14:26.275,288,GET - Homepage-0,302,,Thread group name 1-12,,true,,209,361,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,288,0,121
+2023/02/24 11:14:26.563,203,GET - Homepage-1,200,,Thread group name 1-12,text,true,,242,362,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,203,0,0
+2023/02/24 11:14:26.776,596,GET - Homepage,200,,Thread group name 1-13,text,true,,451,723,2,2,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,456,0,180
+2023/02/24 11:14:26.776,456,GET - Homepage-0,302,,Thread group name 1-13,,true,,209,361,2,2,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,456,0,180
+2023/02/24 11:14:27.232,140,GET - Homepage-1,200,,Thread group name 1-13,text,true,,242,362,2,2,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,140,0,0
+2023/02/24 11:14:27.274,501,GET - Homepage,200,,Thread group name 1-14,text,true,,451,723,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,284,0,98
+2023/02/24 11:14:27.274,284,GET - Homepage-0,302,,Thread group name 1-14,,true,,209,361,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,284,0,98
+2023/02/24 11:14:27.558,217,GET - Homepage-1,200,,Thread group name 1-14,text,true,,242,362,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,217,0,0
+2023/02/24 11:14:27.776,431,GET - Homepage,200,,Thread group name 1-15,text,true,,451,723,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,291,0,114
+2023/02/24 11:14:27.776,291,GET - Homepage-0,302,,Thread group name 1-15,,true,,209,361,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,291,0,114
+2023/02/24 11:14:28.067,140,GET - Homepage-1,200,,Thread group name 1-15,text,true,,242,362,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,140,0,0
+2023/02/24 11:14:28.276,489,GET - Homepage,200,,Thread group name 1-16,text,true,,451,723,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,364,0,131
+2023/02/24 11:14:28.276,364,GET - Homepage-0,302,,Thread group name 1-16,,true,,209,361,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,364,0,131
+2023/02/24 11:14:28.640,125,GET - Homepage-1,200,,Thread group name 1-16,text,true,,242,362,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,125,0,0
+2023/02/24 11:14:28.775,781,GET - Homepage,200,,Thread group name 1-17,text,true,,451,723,2,2,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,264,0,97
+2023/02/24 11:14:28.775,264,GET - Homepage-0,302,,Thread group name 1-17,,true,,209,361,2,2,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,264,0,97
+2023/02/24 11:14:29.039,517,GET - Homepage-1,200,,Thread group name 1-17,text,true,,242,362,2,2,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,517,0,0
+2023/02/24 11:14:29.274,659,GET - Homepage,200,,Thread group name 1-18,text,true,,451,723,2,2,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,491,0,327
+2023/02/24 11:14:29.274,491,GET - Homepage-0,302,,Thread group name 1-18,,true,,209,361,2,2,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,491,0,327
+2023/02/24 11:14:29.765,168,GET - Homepage-1,200,,Thread group name 1-18,text,true,,242,362,2,2,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,168,0,0
+2023/02/24 11:14:29.775,707,GET - Homepage,200,,Thread group name 1-19,text,true,,451,723,2,2,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,433,0,227
+2023/02/24 11:14:29.775,433,GET - Homepage-0,302,,Thread group name 1-19,,true,,209,361,2,2,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,433,0,227
+2023/02/24 11:14:30.208,274,GET - Homepage-1,200,,Thread group name 1-19,text,true,,242,362,2,2,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,274,0,0
+2023/02/24 11:14:30.276,687,GET - Homepage,200,,Thread group name 1-20,text,true,,451,723,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,494,0,206
+2023/02/24 11:14:30.276,494,GET - Homepage-0,302,,Thread group name 1-20,,true,,209,361,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,494,0,206
+2023/02/24 11:14:30.770,193,GET - Homepage-1,200,,Thread group name 1-20,text,true,,242,362,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,193,0,0
+2023/02/24 11:15:23.585,412,GET - Homepage,200,,Thread group name 1-1,text,false,Test failed: code expected to match /[200-399]/,451,723,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,301,0,107
+2023/02/24 11:15:23.585,301,GET - Homepage-0,302,,Thread group name 1-1,,true,,209,361,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,301,0,107
+2023/02/24 11:15:23.886,111,GET - Homepage-1,200,,Thread group name 1-1,text,true,,242,362,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,111,0,0
+2023/02/24 11:15:24.086,346,GET - Homepage,200,,Thread group name 1-2,text,false,Test failed: code expected to match /[200-399]/,451,723,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,190,0,78
+2023/02/24 11:15:24.086,190,GET - Homepage-0,302,,Thread group name 1-2,,true,,209,361,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,190,0,78
+2023/02/24 11:15:24.277,155,GET - Homepage-1,200,,Thread group name 1-2,text,true,,242,362,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,155,0,0
+2023/02/24 11:15:24.585,428,GET - Homepage,200,,Thread group name 1-3,text,false,Test failed: code expected to match /[200-399]/,451,723,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,313,0,63
+2023/02/24 11:15:24.585,313,GET - Homepage-0,302,,Thread group name 1-3,,true,,209,361,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,313,0,63
+2023/02/24 11:15:24.898,115,GET - Homepage-1,200,,Thread group name 1-3,text,true,,242,362,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,114,0,0
+2023/02/24 11:15:25.086,403,GET - Homepage,200,,Thread group name 1-4,text,false,Test failed: code expected to match /[200-399]/,451,723,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,216,0,78
+2023/02/24 11:15:25.086,216,GET - Homepage-0,302,,Thread group name 1-4,,true,,209,361,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,216,0,78
+2023/02/24 11:15:25.302,187,GET - Homepage-1,200,,Thread group name 1-4,text,true,,242,362,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,187,0,0
+2023/02/24 11:15:25.586,531,GET - Homepage,200,,Thread group name 1-5,text,false,Test failed: code expected to match /[200-399]/,451,723,2,2,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,341,0,73
+2023/02/24 11:15:25.586,341,GET - Homepage-0,302,,Thread group name 1-5,,true,,209,361,2,2,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,341,0,73
+2023/02/24 11:15:25.927,190,GET - Homepage-1,200,,Thread group name 1-5,text,true,,242,362,2,2,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,190,0,0
+2023/02/24 11:15:26.084,384,GET - Homepage,200,,Thread group name 1-6,text,false,Test failed: code expected to match /[200-399]/,451,723,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,185,0,66
+2023/02/24 11:15:26.084,185,GET - Homepage-0,302,,Thread group name 1-6,,true,,209,361,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,185,0,66
+2023/02/24 11:15:26.269,199,GET - Homepage-1,200,,Thread group name 1-6,text,true,,242,362,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,199,0,0
+2023/02/24 11:15:26.584,505,GET - Homepage,200,,Thread group name 1-7,text,false,Test failed: code expected to match /[200-399]/,451,723,2,2,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,370,0,177
+2023/02/24 11:15:26.584,370,GET - Homepage-0,302,,Thread group name 1-7,,true,,209,361,2,2,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,370,0,177
+2023/02/24 11:15:26.953,136,GET - Homepage-1,200,,Thread group name 1-7,text,true,,242,362,2,2,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,135,0,0
+2023/02/24 11:15:27.082,518,GET - Homepage,200,,Thread group name 1-8,text,false,Test failed: code expected to match /[200-399]/,451,723,2,2,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,328,0,91
+2023/02/24 11:15:27.082,328,GET - Homepage-0,302,,Thread group name 1-8,,true,,209,361,2,2,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,328,0,91
+2023/02/24 11:15:27.410,190,GET - Homepage-1,200,,Thread group name 1-8,text,true,,242,362,2,2,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,190,0,0
+2023/02/24 11:15:27.587,852,GET - Homepage,200,,Thread group name 1-9,text,false,Test failed: code expected to match /[200-399]/,451,723,2,2,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,250,0,82
+2023/02/24 11:15:27.587,250,GET - Homepage-0,302,,Thread group name 1-9,,true,,209,361,2,2,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,250,0,82
+2023/02/24 11:15:27.837,602,GET - Homepage-1,200,,Thread group name 1-9,text,true,,242,362,2,2,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,602,0,0
+2023/02/24 11:15:28.084,720,GET - Homepage,200,,Thread group name 1-10,text,false,Test failed: code expected to match /[200-399]/,451,723,2,2,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,544,0,355
+2023/02/24 11:15:28.084,544,GET - Homepage-0,302,,Thread group name 1-10,,true,,209,361,2,2,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,544,0,355
+2023/02/24 11:15:28.628,176,GET - Homepage-1,200,,Thread group name 1-10,text,true,,242,362,2,2,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,176,0,0
+2023/02/24 11:15:28.583,592,GET - Homepage,200,,Thread group name 1-11,text,false,Test failed: code expected to match /[200-399]/,451,723,2,2,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,373,0,107
+2023/02/24 11:15:28.583,373,GET - Homepage-0,302,,Thread group name 1-11,,true,,209,361,2,2,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,373,0,107
+2023/02/24 11:15:28.956,219,GET - Homepage-1,200,,Thread group name 1-11,text,true,,242,362,2,2,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,219,0,0
+2023/02/24 11:15:29.085,478,GET - Homepage,200,,Thread group name 1-12,text,false,Test failed: code expected to match /[200-399]/,451,723,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,279,0,124
+2023/02/24 11:15:29.085,279,GET - Homepage-0,302,,Thread group name 1-12,,true,,209,361,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,279,0,124
+2023/02/24 11:15:29.364,199,GET - Homepage-1,200,,Thread group name 1-12,text,true,,242,362,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,199,0,0
+2023/02/24 11:15:29.584,441,GET - Homepage,200,,Thread group name 1-13,text,false,Test failed: code expected to match /[200-399]/,451,723,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,333,0,162
+2023/02/24 11:15:29.584,333,GET - Homepage-0,302,,Thread group name 1-13,,true,,209,361,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,333,0,162
+2023/02/24 11:15:29.918,107,GET - Homepage-1,200,,Thread group name 1-13,text,true,,242,362,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,107,0,0
+2023/02/24 11:15:30.084,352,GET - Homepage,200,,Thread group name 1-14,text,false,Test failed: code expected to match /[200-399]/,451,723,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,254,0,85
+2023/02/24 11:15:30.084,254,GET - Homepage-0,302,,Thread group name 1-14,,true,,209,361,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,254,0,85
+2023/02/24 11:15:30.338,98,GET - Homepage-1,200,,Thread group name 1-14,text,true,,242,362,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,98,0,0
+2023/02/24 11:15:30.583,378,GET - Homepage,200,,Thread group name 1-15,text,false,Test failed: code expected to match /[200-399]/,451,723,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,293,0,90
+2023/02/24 11:15:30.583,293,GET - Homepage-0,302,,Thread group name 1-15,,true,,209,361,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,293,0,90
+2023/02/24 11:15:30.876,85,GET - Homepage-1,200,,Thread group name 1-15,text,true,,242,362,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,85,0,0
+2023/02/24 11:15:31.084,424,GET - Homepage,200,,Thread group name 1-16,text,false,Test failed: code expected to match /[200-399]/,451,723,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,273,0,73
+2023/02/24 11:15:31.084,273,GET - Homepage-0,302,,Thread group name 1-16,,true,,209,361,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,273,0,73
+2023/02/24 11:15:31.357,151,GET - Homepage-1,200,,Thread group name 1-16,text,true,,242,362,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,151,0,0
+2023/02/24 11:15:31.584,515,GET - Homepage,200,,Thread group name 1-17,text,false,Test failed: code expected to match /[200-399]/,451,723,2,2,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,329,0,124
+2023/02/24 11:15:31.584,329,GET - Homepage-0,302,,Thread group name 1-17,,true,,209,361,2,2,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,329,0,124
+2023/02/24 11:15:31.913,186,GET - Homepage-1,200,,Thread group name 1-17,text,true,,242,362,2,2,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,186,0,0
+2023/02/24 11:15:32.084,467,GET - Homepage,200,,Thread group name 1-18,text,false,Test failed: code expected to match /[200-399]/,451,723,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,330,0,103
+2023/02/24 11:15:32.084,330,GET - Homepage-0,302,,Thread group name 1-18,,true,,209,361,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,330,0,103
+2023/02/24 11:15:32.414,137,GET - Homepage-1,200,,Thread group name 1-18,text,true,,242,362,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,137,0,0
+2023/02/24 11:15:32.584,404,GET - Homepage,200,,Thread group name 1-19,text,false,Test failed: code expected to match /[200-399]/,451,723,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,248,0,111
+2023/02/24 11:15:32.584,248,GET - Homepage-0,302,,Thread group name 1-19,,true,,209,361,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,248,0,111
+2023/02/24 11:15:32.832,156,GET - Homepage-1,200,,Thread group name 1-19,text,true,,242,362,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,156,0,0
+2023/02/24 11:15:33.085,575,GET - Homepage,200,,Thread group name 1-20,text,false,Test failed: code expected to match /[200-399]/,451,723,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,371,0,109
+2023/02/24 11:15:33.085,371,GET - Homepage-0,302,,Thread group name 1-20,,true,,209,361,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,371,0,109
+2023/02/24 11:15:33.456,204,GET - Homepage-1,200,,Thread group name 1-20,text,true,,242,362,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,204,0,0
+2023/02/24 11:16:51.737,459,GET - Homepage,200,,Thread group name 1-1,text,false,Test failed: code expected to match /[200-399]/,451,723,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,302,0,81
+2023/02/24 11:16:51.737,302,GET - Homepage-0,302,,Thread group name 1-1,,true,,209,361,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,302,0,81
+2023/02/24 11:16:52.040,156,GET - Homepage-1,200,,Thread group name 1-1,text,true,,242,362,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,156,0,0
+2023/02/24 11:16:52.234,460,GET - Homepage,200,,Thread group name 1-2,text,false,Test failed: code expected to match /[200-399]/,451,723,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,311,0,111
+2023/02/24 11:16:52.234,311,GET - Homepage-0,302,,Thread group name 1-2,,true,,209,361,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,311,0,111
+2023/02/24 11:16:52.545,149,GET - Homepage-1,200,,Thread group name 1-2,text,true,,242,362,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,149,0,0
+2023/02/24 11:16:52.733,770,GET - Homepage,200,,Thread group name 1-3,text,false,Test failed: code expected to match /[200-399]/,451,723,2,2,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,633,0,183
+2023/02/24 11:16:52.733,633,GET - Homepage-0,302,,Thread group name 1-3,,true,,209,361,2,2,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,633,0,183
+2023/02/24 11:16:53.366,137,GET - Homepage-1,200,,Thread group name 1-3,text,true,,242,362,2,2,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,137,0,0
+2023/02/24 11:16:53.234,406,GET - Homepage,200,,Thread group name 1-4,text,false,Test failed: code expected to match /[200-399]/,451,723,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,206,0,132
+2023/02/24 11:16:53.234,206,GET - Homepage-0,302,,Thread group name 1-4,,true,,209,361,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,206,0,132
+2023/02/24 11:16:53.440,200,GET - Homepage-1,200,,Thread group name 1-4,text,true,,242,362,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,200,0,0
+2023/02/24 11:16:53.733,535,GET - Homepage,200,,Thread group name 1-5,text,false,Test failed: code expected to match /[200-399]/,451,723,2,2,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,347,0,132
+2023/02/24 11:16:53.733,347,GET - Homepage-0,302,,Thread group name 1-5,,true,,209,361,2,2,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,347,0,132
+2023/02/24 11:16:54.080,188,GET - Homepage-1,200,,Thread group name 1-5,text,true,,242,362,2,2,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,188,0,0
+2023/02/24 11:16:54.234,378,GET - Homepage,200,,Thread group name 1-6,text,false,Test failed: code expected to match /[200-399]/,451,723,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,231,0,71
+2023/02/24 11:16:54.234,231,GET - Homepage-0,302,,Thread group name 1-6,,true,,209,361,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,231,0,71
+2023/02/24 11:16:54.465,147,GET - Homepage-1,200,,Thread group name 1-6,text,true,,242,362,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,147,0,0
+2023/02/24 11:16:54.734,333,GET - Homepage,200,,Thread group name 1-7,text,false,Test failed: code expected to match /[200-399]/,451,723,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,235,0,73
+2023/02/24 11:16:54.734,235,GET - Homepage-0,302,,Thread group name 1-7,,true,,209,361,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,235,0,73
+2023/02/24 11:16:54.970,97,GET - Homepage-1,200,,Thread group name 1-7,text,true,,242,362,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,97,0,0
+2023/02/24 11:16:55.233,425,GET - Homepage,200,,Thread group name 1-8,text,false,Test failed: code expected to match /[200-399]/,451,723,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,269,0,73
+2023/02/24 11:16:55.233,269,GET - Homepage-0,302,,Thread group name 1-8,,true,,209,361,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,269,0,73
+2023/02/24 11:16:55.502,156,GET - Homepage-1,200,,Thread group name 1-8,text,true,,242,362,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,156,0,0
+2023/02/24 11:16:55.733,466,GET - Homepage,200,,Thread group name 1-9,text,false,Test failed: code expected to match /[200-399]/,451,723,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,313,0,92
+2023/02/24 11:16:55.733,313,GET - Homepage-0,302,,Thread group name 1-9,,true,,209,361,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,313,0,92
+2023/02/24 11:16:56.046,153,GET - Homepage-1,200,,Thread group name 1-9,text,true,,242,362,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,153,0,0
+2023/02/24 11:16:56.247,464,GET - Homepage,200,,Thread group name 1-10,text,false,Test failed: code expected to match /[200-399]/,451,723,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,324,0,103
+2023/02/24 11:16:56.247,324,GET - Homepage-0,302,,Thread group name 1-10,,true,,209,361,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,324,0,103
+2023/02/24 11:16:56.572,139,GET - Homepage-1,200,,Thread group name 1-10,text,true,,242,362,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,139,0,0
+2023/02/24 11:16:56.733,490,GET - Homepage,200,,Thread group name 1-11,text,false,Test failed: code expected to match /[200-399]/,451,723,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,263,0,89
+2023/02/24 11:16:56.733,263,GET - Homepage-0,302,,Thread group name 1-11,,true,,209,361,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,263,0,89
+2023/02/24 11:16:56.997,226,GET - Homepage-1,200,,Thread group name 1-11,text,true,,242,362,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,226,0,0
+2023/02/24 11:16:57.234,458,GET - Homepage,200,,Thread group name 1-12,text,false,Test failed: code expected to match /[200-399]/,451,723,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,320,0,97
+2023/02/24 11:16:57.234,320,GET - Homepage-0,302,,Thread group name 1-12,,true,,209,361,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,320,0,97
+2023/02/24 11:16:57.554,138,GET - Homepage-1,200,,Thread group name 1-12,text,true,,242,362,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,138,0,0
+2023/02/24 11:16:57.737,457,GET - Homepage,200,,Thread group name 1-13,text,false,Test failed: code expected to match /[200-399]/,451,723,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,314,0,124
+2023/02/24 11:16:57.737,314,GET - Homepage-0,302,,Thread group name 1-13,,true,,209,361,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,314,0,124
+2023/02/24 11:16:58.051,143,GET - Homepage-1,200,,Thread group name 1-13,text,true,,242,362,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,143,0,0
+2023/02/24 11:16:58.234,397,GET - Homepage,200,,Thread group name 1-14,text,false,Test failed: code expected to match /[200-399]/,451,723,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,303,0,82
+2023/02/24 11:16:58.234,303,GET - Homepage-0,302,,Thread group name 1-14,,true,,209,361,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,303,0,82
+2023/02/24 11:16:58.537,94,GET - Homepage-1,200,,Thread group name 1-14,text,true,,242,362,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,94,0,0
+2023/02/24 11:16:58.733,476,GET - Homepage,200,,Thread group name 1-15,text,false,Test failed: code expected to match /[200-399]/,451,723,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,312,0,120
+2023/02/24 11:16:58.733,312,GET - Homepage-0,302,,Thread group name 1-15,,true,,209,361,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,312,0,120
+2023/02/24 11:16:59.045,164,GET - Homepage-1,200,,Thread group name 1-15,text,true,,242,362,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,164,0,0
+2023/02/24 11:16:59.234,548,GET - Homepage,200,,Thread group name 1-16,text,false,Test failed: code expected to match /[200-399]/,451,723,2,2,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,344,0,131
+2023/02/24 11:16:59.234,344,GET - Homepage-0,302,,Thread group name 1-16,,true,,209,361,2,2,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,344,0,131
+2023/02/24 11:16:59.578,204,GET - Homepage-1,200,,Thread group name 1-16,text,true,,242,362,2,2,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,204,0,0
+2023/02/24 11:16:59.734,346,GET - Homepage,200,,Thread group name 1-17,text,false,Test failed: code expected to match /[200-399]/,451,723,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,197,0,80
+2023/02/24 11:16:59.734,197,GET - Homepage-0,302,,Thread group name 1-17,,true,,209,361,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,197,0,80
+2023/02/24 11:16:59.931,149,GET - Homepage-1,200,,Thread group name 1-17,text,true,,242,362,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,149,0,0
+2023/02/24 11:17:00.233,469,GET - Homepage,200,,Thread group name 1-18,text,false,Test failed: code expected to match /[200-399]/,451,723,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,320,0,75
+2023/02/24 11:17:00.233,320,GET - Homepage-0,302,,Thread group name 1-18,,true,,209,361,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,320,0,75
+2023/02/24 11:17:00.553,149,GET - Homepage-1,200,,Thread group name 1-18,text,true,,242,362,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,149,0,0
+2023/02/24 11:17:00.734,454,GET - Homepage,200,,Thread group name 1-19,text,false,Test failed: code expected to match /[200-399]/,451,723,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,312,0,75
+2023/02/24 11:17:00.734,312,GET - Homepage-0,302,,Thread group name 1-19,,true,,209,361,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,312,0,75
+2023/02/24 11:17:01.046,142,GET - Homepage-1,200,,Thread group name 1-19,text,true,,242,362,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,142,0,0
+2023/02/24 11:17:01.235,401,GET - Homepage,200,,Thread group name 1-20,text,false,Test failed: code expected to match /[200-399]/,451,723,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,294,0,78
+2023/02/24 11:17:01.235,294,GET - Homepage-0,302,,Thread group name 1-20,,true,,209,361,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,294,0,78
+2023/02/24 11:17:01.529,107,GET - Homepage-1,200,,Thread group name 1-20,text,true,,242,362,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,107,0,0
+2023/02/24 11:17:14.280,379,GET - Homepage,200,,Thread group name 1-1,text,true,,451,723,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,284,0,67
+2023/02/24 11:17:14.280,284,GET - Homepage-0,302,,Thread group name 1-1,,true,,209,361,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,284,0,67
+2023/02/24 11:17:14.564,95,GET - Homepage-1,200,,Thread group name 1-1,text,true,,242,362,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,95,0,0
+2023/02/24 11:17:14.782,391,GET - Homepage,200,,Thread group name 1-2,text,true,,451,723,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,285,0,112
+2023/02/24 11:17:14.782,285,GET - Homepage-0,302,,Thread group name 1-2,,true,,209,361,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,285,0,112
+2023/02/24 11:17:15.067,106,GET - Homepage-1,200,,Thread group name 1-2,text,true,,242,362,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,106,0,0
+2023/02/24 11:17:15.283,436,GET - Homepage,200,,Thread group name 1-3,text,true,,451,723,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,296,0,89
+2023/02/24 11:17:15.283,296,GET - Homepage-0,302,,Thread group name 1-3,,true,,209,361,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,296,0,89
+2023/02/24 11:17:15.579,140,GET - Homepage-1,200,,Thread group name 1-3,text,true,,242,362,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,140,0,0
+2023/02/24 11:17:15.778,454,GET - Homepage,200,,Thread group name 1-4,text,true,,451,723,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,268,0,106
+2023/02/24 11:17:15.778,268,GET - Homepage-0,302,,Thread group name 1-4,,true,,209,361,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,268,0,106
+2023/02/24 11:17:16.046,186,GET - Homepage-1,200,,Thread group name 1-4,text,true,,242,362,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,186,0,0
+2023/02/24 11:17:16.283,411,GET - Homepage,200,,Thread group name 1-5,text,true,,451,723,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,261,0,90
+2023/02/24 11:17:16.283,261,GET - Homepage-0,302,,Thread group name 1-5,,true,,209,361,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,261,0,90
+2023/02/24 11:17:16.544,150,GET - Homepage-1,200,,Thread group name 1-5,text,true,,242,362,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,150,0,0
+2023/02/24 11:17:16.783,476,GET - Homepage,200,,Thread group name 1-6,text,true,,451,723,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,340,0,118
+2023/02/24 11:17:16.783,340,GET - Homepage-0,302,,Thread group name 1-6,,true,,209,361,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,340,0,118
+2023/02/24 11:17:17.123,136,GET - Homepage-1,200,,Thread group name 1-6,text,true,,242,362,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,136,0,0
+2023/02/24 11:17:17.282,389,GET - Homepage,200,,Thread group name 1-7,text,true,,451,723,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,240,0,81
+2023/02/24 11:17:17.282,240,GET - Homepage-0,302,,Thread group name 1-7,,true,,209,361,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,240,0,81
+2023/02/24 11:17:17.522,149,GET - Homepage-1,200,,Thread group name 1-7,text,true,,242,362,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,149,0,0
+2023/02/24 11:17:17.786,388,GET - Homepage,200,,Thread group name 1-8,text,true,,451,723,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,232,0,72
+2023/02/24 11:17:17.786,232,GET - Homepage-0,302,,Thread group name 1-8,,true,,209,361,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,232,0,72
+2023/02/24 11:17:18.018,156,GET - Homepage-1,200,,Thread group name 1-8,text,true,,242,362,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,156,0,0
+2023/02/24 11:17:18.285,413,GET - Homepage,200,,Thread group name 1-9,text,true,,451,723,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,281,0,126
+2023/02/24 11:17:18.285,281,GET - Homepage-0,302,,Thread group name 1-9,,true,,209,361,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,281,0,126
+2023/02/24 11:17:18.566,132,GET - Homepage-1,200,,Thread group name 1-9,text,true,,242,362,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,132,0,0
+2023/02/24 11:17:18.785,50,GET - Homepage,Non HTTP response code: java.net.SocketException,Non HTTP response message: Socket operation on nonsocket: connect,Thread group name 1-10,text,false,Test failed: text expected to match /200/,2530,0,3,3,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,0,0,50
+2023/02/24 11:18:27.646,337,GET - Homepage,200,,Thread group name 1-1,text,false,Test failed: text expected to match /[200-399]/,451,723,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,243,0,87
+2023/02/24 11:18:27.646,243,GET - Homepage-0,302,,Thread group name 1-1,,true,,209,361,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,243,0,87
+2023/02/24 11:18:27.889,94,GET - Homepage-1,200,,Thread group name 1-1,text,true,,242,362,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,94,0,0
+2023/02/24 11:18:28.145,553,GET - Homepage,200,,Thread group name 1-2,text,false,Test failed: text expected to match /[200-399]/,451,723,2,2,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,352,0,182
+2023/02/24 11:18:28.145,352,GET - Homepage-0,302,,Thread group name 1-2,,true,,209,361,2,2,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,352,0,182
+2023/02/24 11:18:28.497,201,GET - Homepage-1,200,,Thread group name 1-2,text,true,,242,362,2,2,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,201,0,0
+2023/02/24 11:18:28.644,703,GET - Homepage,200,,Thread group name 1-3,text,false,Test failed: text expected to match /[200-399]/,451,723,2,2,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,497,0,141
+2023/02/24 11:18:28.644,497,GET - Homepage-0,302,,Thread group name 1-3,,true,,209,361,2,2,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,497,0,141
+2023/02/24 11:18:29.141,206,GET - Homepage-1,200,,Thread group name 1-3,text,true,,242,362,2,2,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,206,0,0
+2023/02/24 11:18:29.146,479,GET - Homepage,200,,Thread group name 1-4,text,false,Test failed: text expected to match /[200-399]/,451,723,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,364,0,201
+2023/02/24 11:18:29.146,364,GET - Homepage-0,302,,Thread group name 1-4,,true,,209,361,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,364,0,201
+2023/02/24 11:18:29.510,115,GET - Homepage-1,200,,Thread group name 1-4,text,true,,242,362,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,115,0,0
+2023/02/24 11:18:29.646,477,GET - Homepage,200,,Thread group name 1-5,text,false,Test failed: text expected to match /[200-399]/,451,723,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,323,0,123
+2023/02/24 11:18:29.646,323,GET - Homepage-0,302,,Thread group name 1-5,,true,,209,361,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,323,0,123
+2023/02/24 11:18:29.970,153,GET - Homepage-1,200,,Thread group name 1-5,text,true,,242,362,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,153,0,0
+2023/02/24 11:18:30.145,535,GET - Homepage,200,,Thread group name 1-6,text,false,Test failed: text expected to match /[200-399]/,451,723,2,2,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,381,0,141
+2023/02/24 11:18:30.145,381,GET - Homepage-0,302,,Thread group name 1-6,,true,,209,361,2,2,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,381,0,141
+2023/02/24 11:18:30.526,154,GET - Homepage-1,200,,Thread group name 1-6,text,true,,242,362,2,2,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,154,0,0
+2023/02/24 11:18:30.644,348,GET - Homepage,200,,Thread group name 1-7,text,false,Test failed: text expected to match /[200-399]/,451,723,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,216,0,83
+2023/02/24 11:18:30.644,216,GET - Homepage-0,302,,Thread group name 1-7,,true,,209,361,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,216,0,83
+2023/02/24 11:18:30.860,132,GET - Homepage-1,200,,Thread group name 1-7,text,true,,242,362,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,132,0,0
+2023/02/24 11:18:31.146,419,GET - Homepage,200,,Thread group name 1-8,text,false,Test failed: text expected to match /[200-399]/,451,723,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,282,0,66
+2023/02/24 11:18:31.146,282,GET - Homepage-0,302,,Thread group name 1-8,,true,,209,361,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,282,0,66
+2023/02/24 11:18:31.429,136,GET - Homepage-1,200,,Thread group name 1-8,text,true,,242,362,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,136,0,0
+2023/02/24 11:18:31.644,307,GET - Homepage,Non HTTP response code: java.net.SocketException,Non HTTP response message: Socket closed,Thread group name 1-9,text,false,Test failed: text expected to match /[200-399]/,2643,0,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,0,0,161
+2023/02/24 11:20:54.904,438,GET - Homepage,200,,Thread group name 1-1,text,true,,451,723,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,260,0,91
+2023/02/24 11:20:54.904,260,GET - Homepage-0,302,,Thread group name 1-1,,true,,209,361,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,260,0,91
+2023/02/24 11:20:55.164,178,GET - Homepage-1,200,,Thread group name 1-1,text,true,,242,362,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,178,0,0
+2023/02/24 11:20:55.419,533,GET - Homepage,200,,Thread group name 1-2,text,true,,451,723,2,2,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,329,0,94
+2023/02/24 11:20:55.419,329,GET - Homepage-0,302,,Thread group name 1-2,,true,,209,361,2,2,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,329,0,94
+2023/02/24 11:20:55.748,204,GET - Homepage-1,200,,Thread group name 1-2,text,true,,242,362,2,2,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,204,0,0
+2023/02/24 11:20:55.918,445,GET - Homepage,200,,Thread group name 1-3,text,true,,451,723,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,276,0,68
+2023/02/24 11:20:55.918,276,GET - Homepage-0,302,,Thread group name 1-3,,true,,209,361,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,276,0,68
+2023/02/24 11:20:56.194,169,GET - Homepage-1,200,,Thread group name 1-3,text,true,,242,362,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,169,0,0
+2023/02/24 11:20:56.404,417,GET - Homepage,200,,Thread group name 1-4,text,true,,451,723,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,193,0,108
+2023/02/24 11:20:56.404,193,GET - Homepage-0,302,,Thread group name 1-4,,true,,209,361,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,193,0,108
+2023/02/24 11:20:56.597,224,GET - Homepage-1,200,,Thread group name 1-4,text,true,,242,362,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,224,0,0
+2023/02/24 11:20:56.903,461,GET - Homepage,200,,Thread group name 1-5,text,true,,451,723,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,306,0,88
+2023/02/24 11:20:56.903,306,GET - Homepage-0,302,,Thread group name 1-5,,true,,209,361,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,306,0,88
+2023/02/24 11:20:57.209,155,GET - Homepage-1,200,,Thread group name 1-5,text,true,,242,362,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,155,0,0
+2023/02/24 11:20:57.405,426,GET - Homepage,200,,Thread group name 1-6,text,true,,451,723,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,333,0,105
+2023/02/24 11:20:57.405,333,GET - Homepage-0,302,,Thread group name 1-6,,true,,209,361,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,333,0,105
+2023/02/24 11:20:57.738,93,GET - Homepage-1,200,,Thread group name 1-6,text,true,,242,362,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,93,0,0
+2023/02/24 11:20:57.904,787,GET - Homepage,200,,Thread group name 1-7,text,true,,451,723,2,2,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,593,0,458
+2023/02/24 11:20:57.904,593,GET - Homepage-0,302,,Thread group name 1-7,,true,,209,361,2,2,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,593,0,458
+2023/02/24 11:20:58.498,193,GET - Homepage-1,200,,Thread group name 1-7,text,true,,242,362,2,2,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,193,0,0
+2023/02/24 11:20:58.403,509,GET - Homepage,200,,Thread group name 1-8,text,true,,451,723,2,2,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,321,0,152
+2023/02/24 11:20:58.403,321,GET - Homepage-0,302,,Thread group name 1-8,,true,,209,361,2,2,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,321,0,152
+2023/02/24 11:20:58.724,188,GET - Homepage-1,200,,Thread group name 1-8,text,true,,242,362,2,2,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,188,0,0
+2023/02/24 11:20:58.903,343,GET - Homepage,200,,Thread group name 1-9,text,true,,451,723,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,201,0,98
+2023/02/24 11:20:58.903,201,GET - Homepage-0,302,,Thread group name 1-9,,true,,209,361,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,201,0,98
+2023/02/24 11:20:59.104,142,GET - Homepage-1,200,,Thread group name 1-9,text,true,,242,362,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,142,0,0
+2023/02/24 11:20:59.404,374,GET - Homepage,200,,Thread group name 1-10,text,true,,451,723,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,264,0,61
+2023/02/24 11:20:59.404,264,GET - Homepage-0,302,,Thread group name 1-10,,true,,209,361,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,264,0,61
+2023/02/24 11:20:59.669,109,GET - Homepage-1,200,,Thread group name 1-10,text,true,,242,362,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,109,0,0
+2023/02/24 11:20:59.904,473,GET - Homepage,200,,Thread group name 1-11,text,true,,451,723,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,295,0,108
+2023/02/24 11:20:59.904,295,GET - Homepage-0,302,,Thread group name 1-11,,true,,209,361,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,295,0,108
+2023/02/24 11:21:00.199,178,GET - Homepage-1,200,,Thread group name 1-11,text,true,,242,362,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,178,0,0
+2023/02/24 11:21:00.404,515,GET - Homepage,200,,Thread group name 1-12,text,true,,451,723,2,2,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,349,0,118
+2023/02/24 11:21:00.404,349,GET - Homepage-0,302,,Thread group name 1-12,,true,,209,361,2,2,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,349,0,118
+2023/02/24 11:21:00.753,166,GET - Homepage-1,200,,Thread group name 1-12,text,true,,242,362,2,2,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,166,0,0
+2023/02/24 11:21:00.904,458,GET - Homepage,200,,Thread group name 1-13,text,true,,451,723,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,257,0,80
+2023/02/24 11:21:00.904,257,GET - Homepage-0,302,,Thread group name 1-13,,true,,209,361,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,257,0,80
+2023/02/24 11:21:01.162,200,GET - Homepage-1,200,,Thread group name 1-13,text,true,,242,362,1,1,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,200,0,0
+2023/02/24 11:21:01.905,406,GET - Homepage,200,,Thread group name 1-15,text,true,,451,723,2,2,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,258,0,91
+2023/02/24 11:21:01.905,258,GET - Homepage-0,302,,Thread group name 1-15,,true,,209,361,2,2,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,258,0,91
+2023/02/24 11:21:02.164,147,GET - Homepage-1,200,,Thread group name 1-15,text,true,,242,362,2,2,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,147,0,0
+2023/02/24 11:21:02.404,364,GET - Homepage,200,,Thread group name 1-16,text,true,,451,723,2,2,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,260,0,98
+2023/02/24 11:21:02.404,260,GET - Homepage-0,302,,Thread group name 1-16,,true,,209,361,2,2,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,260,0,98
+2023/02/24 11:21:02.664,104,GET - Homepage-1,200,,Thread group name 1-16,text,true,,242,362,2,2,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,104,0,0
+2023/02/24 11:21:02.905,612,GET - Homepage,200,,Thread group name 1-17,text,true,,451,723,3,3,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,415,0,154
+2023/02/24 11:21:02.905,415,GET - Homepage-0,302,,Thread group name 1-17,,true,,209,361,3,3,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,415,0,154
+2023/02/24 11:21:03.320,197,GET - Homepage-1,200,,Thread group name 1-17,text,true,,242,362,3,3,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck/,197,0,0
+2023/02/24 11:21:01.406,2120,GET - Homepage,Non HTTP response code: java.net.SocketException,Non HTTP response message: Socket operation on nonsocket: connect,Thread group name 1-14,text,false,Test failed: text expected to match /[2-3][0-9][0-9]/,2530,0,3,3,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,0,0,2120
+2023/02/24 11:21:03.403,124,GET - Homepage,Non HTTP response code: java.net.SocketException,Non HTTP response message: Socket closed,Thread group name 1-18,text,false,Test failed: text expected to match /[2-3][0-9][0-9]/,2643,0,2,2,http://sample-webapp-8080-tcp-okd4-training.apps.test-cluster.dedalus.red.com/healthcheck,0,0,114

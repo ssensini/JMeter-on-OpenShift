@@ -22,26 +22,31 @@ ENV TZ ${TZ}
 
 WORKDIR	${JMETER_HOME}
 
-RUN yum -y install tzdata curl unzip; \
+RUN yum -y install tzdata curl unzip wget; \
     yum -y install java-1.8.0-openjdk-devel; \
 	mkdir -p /tmp/dependencies; \
 	curl -L --silent ${JMETER_DOWNLOAD_URL} >  /tmp/dependencies/apache-jmeter-${JMETER_VERSION}.tgz; \
 	mkdir -p /opt ; \
 	tar -xzf /tmp/dependencies/apache-jmeter-${JMETER_VERSION}.tgz -C /opt; \
-    curl -L --silent ${JMETER_CMD_RUNNER_URL} > lib/cmdrunner-${JMETER_CMD_RUNNER}.jar \
-    curl -L --silent ${JMETER_PLUGINS_MANAGER_URL} > lib/ext/jmeter-plugins-manager-${JMETER_PLUGINS_MANAGER}.jar; \
+    curl -L --silent ${JMETER_CMD_RUNNER_URL} > lib/cmdrunner-${JMETER_CMD_RUNNER}.jar; \
+    curl -L --silent ${JMETER_PLUGINS_MANAGER_URL} > lib/ext/jmeter-add-plugins-manager-${JMETER_PLUGINS_MANAGER}.jar; \
 	rm -rf /tmp/dependencies; \
     rm -rf ./docs ./printable_docs;
 
 ENV PATH $PATH:$JMETER_BIN
 
-# TODO: necessary?
-COPY entrypoint.sh /
+COPY add-plugins/ ${JMETER_CUSTOM_PLUGINS_FOLDER}
+COPY plugins-manager/ lib/
+
+COPY entrypoint.sh ./entrypoint.sh
 
 RUN chgrp -R 0 ${JMETER_BIN} && \
     chmod -R g=u ${JMETER_BIN} && \
-    chown -R 1001:0 ${JMETER_BIN};
+    chown -R 1001:0 ${JMETER_BIN} && \
+    chgrp -R 0 ${JMETER_HOME} && \
+    chmod -R g=u ${JMETER_HOME} && \
+    chown -R 1001:0 ${JMETER_HOME};
 
 USER 1001
 
-ENTRYPOINT ["/entrypoint.sh"]
+ENTRYPOINT ["./entrypoint.sh"]
