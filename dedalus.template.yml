@@ -130,7 +130,7 @@ parameters:
       GitHub Token
     displayName: GitHub Token
     name: P_GITHUB_TOKEN
-    value: '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'
+    value: ''
   - description: >-
       Test list
     displayName: Test list
