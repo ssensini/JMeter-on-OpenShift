@@ -1,0 +1,145 @@
+apiVersion: template.openshift.io/v1
+kind: Template
+labels:
+  template: dedalus-jmeter
+message: >-
+  The following service(s) have been created in your current project.
+  
+         Application Name: jmeter
+      Application Version: 0.0.1
+
+metadata:
+  annotations:
+    description: >-
+      Lorem ipsum
+    iconClass: icon-d4center
+    openshift.io/display-name: JMeter on OpenShift
+    openshift.io/documentation-url: >-
+      https://confluence.dedalus.eu/x/5jJPAg
+    openshift.io/long-description: >-
+      Lorem ipsum
+    openshift.io/provider-display-name: Dedalus S.p.A.
+    openshift.io/support-url: >-
+      https://confluence.dedalus.eu/x/5jJPAg
+    tags: 'dedalus-jmeter-openshift,dedalus'
+  name: dedalus-jmeter-openshift
+objects:
+  - apiVersion: v1
+    kind: DeploymentConfig
+    metadata:
+      annotations:
+        template.alpha.openshift.io/wait-for-ready: 'true'
+      labels:
+        app: jmeter
+      name: jmeter
+    spec:
+      replicas: 1
+      revisionHistoryLimit: 5
+      selector:
+        app: jmeter
+        deploymentconfig: jmeter
+      strategy:
+        activeDeadlineSeconds: 2400
+        type: Rolling
+      #        resources:
+      #          limits:
+      #            cpu: '200m'
+      #            memory: '200Mi'
+      #          requests:
+      #            cpu: '100m'
+      #            memory: '100Mi'
+      template:
+        metadata:
+          labels:
+            app: jmeter
+            deploymentconfig: jmeter
+        spec:
+          containers:
+            - env:
+                - name: NAMESPACE
+                  valueFrom:
+                    fieldRef:
+                      apiVersion: v1
+                      fieldPath: metadata.namespace
+                - name: REMOTE_PROTOCOL
+                  value: '${P_REMOTE_PROTOCOL}'
+                - name: REMOTE_HOST
+                  value: '${P_REMOTE_HOST}'
+                - name: REMOTE_PORT
+                  value: '${P_REMOTE_PORT}'
+                - name: CONTEXT
+                  value: '${P_CONTEXT}'
+                - name: GITHUB_REPO
+                  value: '${P_GITHUB_REPO}'
+                - name: TEST_LIST
+                  value: '${P_TEST_LIST}'
+                - name: TEST_DIR
+                  value: "${P_TEST_DIRECTORY}"
+                - name: GITHUB_BRANCH
+                  value: "${P_GITHUB_BRANCH}"
+                - name: GITHUB_TOKEN
+                  value: "${P_GITHUB_TOKEN}"
+              image: >-
+                350801433917.dkr.ecr.eu-west-1.amazonaws.com/enterprise-architect/jmeter:0.0.3-SNAPSHOT
+              imagePullPolicy: Always
+              name: jmeter
+          #              resources:
+          #                limits:
+          #                  cpu: '200m'
+          #                  memory: '200Mi'
+          #                requests:
+          #                  cpu: '100m'
+          #                  memory: '100Mi'
+          terminationGracePeriodSeconds: 30
+      test: false
+      triggers:
+        - type: ConfigChange
+parameters:
+  - description: >-
+      Protocol
+    displayName: Protocol
+    name: P_REMOTE_PROTOCOL
+  - description: >-
+      Service name
+    displayName: Service name
+    name: P_REMOTE_HOST
+    value: 'sample-webapp-8080-tcp'
+    required: true
+  - description: >-
+      Port
+    displayName: Port
+    name: P_REMOTE_PORT
+    value: '8080'
+  - description: >-
+      Context
+    displayName: Context
+    name: P_CONTEXT
+    value: ''
+  - description: >-
+      GitHub Repo
+    displayName: GitHub Repo
+    name: P_GITHUB_REPO
+    value: 'https://github.com/ssensini/JMeter-on-OpenShift'
+    required: true
+  - description: >-
+      GitHub Branch
+    displayName: GitHub Branch
+    name: P_GITHUB_BRANCH
+    value: 'master'
+  - description: >-
+      GitHub Token
+    displayName: GitHub Token
+    name: P_GITHUB_TOKEN
+    value: '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'
+  - description: >-
+      Test list
+    displayName: Test list
+    name: P_TEST_LIST
+    value: 'USE_CASE_ID'
+    required: true
+  - description: >-
+      Test directory
+    displayName: Test list
+    name: P_TEST_DIRECTORY
+    value: 'example'
+

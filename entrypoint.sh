@@ -1,33 +1,115 @@
 #!/bin/sh
 
-echo "Configuring remote host..."
+countdown() {
+  n=${1:-10}
 
-echo $REMOTE_HOST
-echo $REMOTE_PORT
-echo $CONTEXT
+  while [ $n -gt 0 ]; do
+    printf "\r%s... " $n
+    sleep 1
+    n=$((n-1))
+  done
+  printf "\r \r"
 
-echo $GITHUB_REPO
+  exit 0
+}
 
-wget $GITHUB_REPO -O test.zip
+echo -e "\e[36m#############################\e[0m"
+echo -e "\e[36mRetrieve basic information...\e[0m"
+echo -e "\e[36m#############################\e[0m"
 
-unzip test.zip
+if [ -n "$REMOTE_PROTOCOL" ]
+then
+  echo "Remote protocol:" $REMOTE_PROTOCOL
+fi
 
-# TODO: change root directory name
-dir=$(find ./ -type d -name "example")
+echo "Remote host:" $REMOTE_HOST
 
-echo $dir
+if [ -n "$REMOTE_PORT" ]
+then
+  echo "Remote port:" $REMOTE_PORT
+fi
 
-rm -rf test.zip
+if [ -n "$CONTEXT" ]
+then
+  echo "Context for web application:" $CONTEXT
+fi
 
-echo "JMeter is starting..."
+echo "GitHub Repo:" $GITHUB_REPO
 
-## Install jmeter add-plugins available on /add-plugins volume
+if [ -n "$GITHUB_BRANCH" ]
+then
+  echo "GitHub Branch:" $GITHUB_BRANCH
+fi
+
+if [ -n "$GITHUB_TOKEN" ]
+then
+  echo "GitHub Token:" $GITHUB_TOKEN
+fi
+
+echo "Test plans directory:" $TEST_DIR
+echo "List of the test plans:" $TEST_LIST
+
+
+# Download the repository
+
+if [ -z "$GITHUB_TOKEN" ]
+then
+  echo "Token empty. Repository is supposed to be PUBLIC."
+  wget $GITHUB_REPO/zipball/$GITHUB_BRANCH/ -O $GITHUB_BRANCH.zip  || (echo -e "\e[31mRepository not found. Check the previous logs for the details!\e[0m" && countdown 10)
+else
+  echo "Token empty. Repository is supposed to be PRIVATE."
+  wget --header "Authorization: token $GITHUB_TOKEN" $GITHUB_REPO/zipball/$GITHUB_BRANCH/ -O $GITHUB_BRANCH.zip
+fi
+
+unzip $GITHUB_BRANCH.zip || (echo -e "\e[31mUnzip was not possible. Check the previous logs for the details!\e[0m" &&
+ countdown 10)
+
+rm -rf $GITHUB_BRANCH.zip
+
+# Find the specified folder
+dir=$(find ./ -type d -name "$TEST_DIR")
+
+# Split multiple test to an array
+if [ -n "$TEST_LIST" ]
+then
+  IFS=', ' read -r -a tests_list <<< $TEST_LIST
+else
+  echo -e "\e[31mEmpty list of test plans. Specified the desidered ones and run again the Pod!\e[0m" && countdown 10
+fi
+
+echo -e "\e[36m#############################\e[0m"
+echo -e "\e[36mJMeter prep...\e[0m"
+echo -e "\e[36m#############################\e[0m"
+
+# Reading and parsing JMeter.properties
+
+PROPS_FILE=$dir"/jmeter.properties"
+setProperty(){
+  awk -v pat="^$1=" -v value="$1=$2" '{ if ($0 ~ pat) print value; else print $0; }' $3 > $3.tmp
+  mv $3.tmp $3
+}
+
+### usage: setProperty $key $value $filename
+if [ -n "$REMOTE_PROTOCOL" ]
+then
+  setProperty "protocol"  $REMOTE_PROTOCOL  $PROPS_FILE
+fi
+
+setProperty "serverName"  $REMOTE_HOST  $PROPS_FILE
+
+if [ -n "$REMOTE_PORT" ]
+then
+  setProperty "port"  $REMOTE_PORT  $PROPS_FILE
+fi
+
+
+## Install JMeter add-plugins available on /add-plugins volume
 if [ -d $JMETER_CUSTOM_PLUGINS_FOLDER ]
 then
     echo "Adding plugins..."
     for plugin in ${JMETER_CUSTOM_PLUGINS_FOLDER}/*.jar; do
         cp $plugin ${JMETER_HOME}/lib/ext
-        echo $plugin + " copied."
+        echo $plugin " copied."
     done;
 fi
 
@@ -39,7 +121,7 @@ freeMem=`awk '/MemAvailable/ { print int($2/1024) }' /proc/meminfo`
 [[ -z ${JVM_XMS} ]] && JVM_XMS=$(($freeMem/10*8))
 [[ -z ${JVM_XMX} ]] && JVM_XMX=$(($freeMem/10*8))
 
-export JVM_ARGS="-Xmn${JVM_XMN}m -Xms${JVM_XMS}m -Xmx${JVM_XMX}m"
+export JVM_ARGS="-Xmn${JVM_XMN}m -Xms${JVM_XMS}m -Xmx${JVM_XMX}m -Djava.util.prefs.userRoot=/tmp/.systemPrefs -Djava.util.prefs.systemRoot=/tmp/.systemPrefs"
 
 echo "START Running Jmeter on `date`"
 echo "JVM_ARGS=${JVM_ARGS}"
@@ -50,29 +132,51 @@ EXTRA_ARGS=-Dlog4j2.formatMsgNoLookups=true
 echo "jmeter ALL ARGS=${EXTRA_ARGS} $@"
 #jmeter ${EXTRA_ARGS} $@
 
-mkdir outputs
+mkdir -p outputs logs
 
-echo "jmeter -n -q ${dir}/jmeter.properties -t ${dir}/test-plans/USE_CASE_ID.jmx -l outputs/pipeline-results.jtl"
+for testname in "${tests_list[@]}"; do
+  echo -e "\e[36m#############################\e[0m"
+  echo -e "\e[36mTest execution\e[0m"
+  echo -e "\e[36m#############################\e[0m"
 
-jmeter -n -q ${dir}/jmeter.properties -t ${dir}/test-plans/USE_CASE_ID.jmx -l outputs/pipeline-results.jtl
+  echo "jmeter -n -q ${dir}/jmeter.properties -t ${dir}/test-plans/${testname}.jmx -l outputs/pipeline-results.jtl"
 
-echo "java -jar ${JMETER_HOME}/lib/cmdrunner-2.3.jar --tool Reporter --generate-csv outputs/aggregate-report.csv --input-jtl outputs/pipeline-results.jtl --plugin-type AggregateReport"
+  {
+    jmeter -n -q ${dir}/jmeter.properties -t "${dir}/test-plans/${testname}".jmx -l outputs/${testname}-results.jtl
+  } || {
+    echo -e "\e[31mSome tests have failed. Check the logs.\e[0m"
+    countdown 10
+  }
 
-java -jar ${JMETER_HOME}/lib/cmdrunner-2.3.jar --tool Reporter --generate-csv outputs/aggregate-report.csv --input-jtl outputs/pipeline-results.jtl --plugin-type AggregateReport
+  echo "########## Get outputs"
 
-echo "END Running Jmeter on `date`"
+  echo "java -jar ${JMETER_HOME}/lib/cmdrunner-2.3.jar --tool Reporter --generate-csv logs/${testname}-aggregate-report.csv --input-jtl outputs/${testname}-results.jtl --plugin-type AggregateReport"
 
-cat outputs/aggregate-report.csv
 
-#
-##     -n \
-##    -t "/tests/${TEST_DIR}/${TEST_PLAN}.jmx" \
-##    -l "/tests/${TEST_DIR}/${TEST_PLAN}.jtl"
-## exec tail -f jmeter.log
-##    -D "java.rmi.server.hostname=${IP}" \
-##    -D "client.rmi.localport=${RMI_PORT}" \
-##  -R $REMOTE_HOSTS
+  {
+    java -jar "${JMETER_HOME}/lib/cmdrunner-2.3.jar" --tool Reporter --generate-csv logs/${testname}-aggregate-report.csv --input-jtl outputs/${testname}-results.jtl --plugin-type AggregateReport
+  } || {
+    echo -e "\e[31mReports' generation has failed. Check the logs.\e[0m"
+    countdown 10
+  }
 
-sleep 2000
+  echo -e "\e[36m#############################\e[0m"
+done
 
-#exit 0
+echo -e "\e[36m#############################\e[0m"
+echo -e "\e[36mEND Running Jmeter on: `date`\e[0m"
+echo -e "\e[36m#############################\e[0m"
+
+cat ${dir}/logs/aggregate-report.csv
+
+test_results=$(grep -r '>true<' ${dir}/logs/ | uniq)
+
+if [[ -z ${test_results} ]]; then
+  echo -e "\e[92mTest completed successfully!\e[0m"
+  countdown 100
+else
+  echo -e "\e[31mSome tests have failed. Check the logs.\e[0m"
+  countdown 10
+fi
+
+exit 0

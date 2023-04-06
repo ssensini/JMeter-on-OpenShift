@@ -22,7 +22,7 @@ ENV TZ ${TZ}
 
 WORKDIR	${JMETER_HOME}
 
-RUN yum -y install tzdata curl unzip wget; \
+RUN yum -y install tzdata curl unzip wget bash; \
     yum -y install java-1.8.0-openjdk-devel; \
 	mkdir -p /tmp/dependencies; \
 	curl -L --silent ${JMETER_DOWNLOAD_URL} >  /tmp/dependencies/apache-jmeter-${JMETER_VERSION}.tgz; \
@@ -31,7 +31,8 @@ RUN yum -y install tzdata curl unzip wget; \
     curl -L --silent ${JMETER_CMD_RUNNER_URL} > lib/cmdrunner-${JMETER_CMD_RUNNER}.jar; \
     curl -L --silent ${JMETER_PLUGINS_MANAGER_URL} > lib/ext/jmeter-add-plugins-manager-${JMETER_PLUGINS_MANAGER}.jar; \
 	rm -rf /tmp/dependencies; \
-    rm -rf ./docs ./printable_docs;
+    rm -rf ./docs ./printable_docs; \
+    mkdir /tmp/.systemPrefs;
 
 ENV PATH $PATH:$JMETER_BIN
 
@@ -45,7 +46,10 @@ RUN chgrp -R 0 ${JMETER_BIN} && \
     chown -R 1001:0 ${JMETER_BIN} && \
     chgrp -R 0 ${JMETER_HOME} && \
     chmod -R g=u ${JMETER_HOME} && \
-    chown -R 1001:0 ${JMETER_HOME};
+    chown -R 1001:0 ${JMETER_HOME} && \
+    chgrp -R 0  /tmp/.systemPrefs && \
+    chmod -R g=u  /tmp/.systemPrefs && \
+    chown -R 1001:0  /tmp/.systemPrefs;
 
 USER 1001
 
