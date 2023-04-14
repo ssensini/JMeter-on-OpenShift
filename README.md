@@ -6,8 +6,8 @@ Tested with JMeter 5.5
 
 # Local build
 
-docker build -t 350801433917.dkr.ecr.eu-west-1.amazonaws.com/enterprise-architect/jmeter:0.0.2-SNAPSHOT .
-docker push 350801433917.dkr.ecr.eu-west-1.amazonaws.com/enterprise-architect/jmeter:0.0.2-SNAPSHOT
+docker build -t 350801433917.dkr.ecr.eu-west-1.amazonaws.com/enterprise-architect/jmeter:0.0.4-SNAPSHOT .
+docker push 350801433917.dkr.ecr.eu-west-1.amazonaws.com/enterprise-architect/jmeter:0.0.4-SNAPSHOT
 
 # Local usage
 
@@ -29,12 +29,11 @@ Deploy the template.
 - Add CMD to provide args on container startup OK
 - Output OK
 - Custom plugins OK
+- provide a list of tests that should  be run (0.0.3) OK
+- append custom properties file OK
 
 # DOING
  
-
 # TO DO
 
-- Remote conf is BUILT-in: where do we take those infos? from environment? do we override the information based in 
-  jmeter.properties?
 - JSON logs?

@@ -43,7 +43,8 @@ fi
 
 if [ -n "$GITHUB_TOKEN" ]
 then
-  echo "GitHub Token:" $GITHUB_TOKEN
+  echo "GitHub Token:" && echo ${GITHUB_TOKEN:0:20}...
+
 fi
 
 echo "Test plans directory:" $TEST_DIR
@@ -57,7 +58,7 @@ then
   echo "Token empty. Repository is supposed to be PUBLIC."
   wget $GITHUB_REPO/zipball/$GITHUB_BRANCH/ -O $GITHUB_BRANCH.zip  || (echo -e "\e[31mRepository not found. Check the previous logs for the details!\e[0m" && countdown 10)
 else
-  echo "Token empty. Repository is supposed to be PRIVATE."
+  echo "Token not empty. Repository is supposed to be PRIVATE."
   wget --header "Authorization: token $GITHUB_TOKEN" $GITHUB_REPO/zipball/$GITHUB_BRANCH/ -O $GITHUB_BRANCH.zip
 fi
 

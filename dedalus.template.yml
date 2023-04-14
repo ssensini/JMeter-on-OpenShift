@@ -12,7 +12,7 @@ metadata:
   annotations:
     description: >-
       Lorem ipsum
-    iconClass: icon-d4center
+    iconClass: icon-openjdk
     openshift.io/display-name: JMeter on OpenShift
     openshift.io/documentation-url: >-
       https://confluence.dedalus.eu/x/5jJPAg
@@ -80,7 +80,7 @@ objects:
                 - name: GITHUB_TOKEN
                   value: "${P_GITHUB_TOKEN}"
               image: >-
-                350801433917.dkr.ecr.eu-west-1.amazonaws.com/enterprise-architect/jmeter:0.0.3-SNAPSHOT
+                350801433917.dkr.ecr.eu-west-1.amazonaws.com/enterprise-architect/jmeter:0.0.4-SNAPSHOT
               imagePullPolicy: Always
               name: jmeter
           #              resources:
@@ -130,7 +130,7 @@ parameters:
       GitHub Token
     displayName: GitHub Token
     name: P_GITHUB_TOKEN
-    value: ''
+    value: 'github_pat_xxx'
   - description: >-
       Test list
     displayName: Test list
@@ -139,7 +139,7 @@ parameters:
     required: true
   - description: >-
       Test directory
-    displayName: Test list
+    displayName: Test directory
     name: P_TEST_DIRECTORY
     value: 'example'
 
