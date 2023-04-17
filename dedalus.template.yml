@@ -80,7 +80,7 @@ objects:
                 - name: GITHUB_TOKEN
                   value: "${P_GITHUB_TOKEN}"
               image: >-
-                350801433917.dkr.ecr.eu-west-1.amazonaws.com/enterprise-architect/jmeter:0.0.4-SNAPSHOT
+                350801433917.dkr.ecr.eu-west-1.amazonaws.com/enterprise-architect/jmeter:0.0.5-SNAPSHOT
               imagePullPolicy: Always
               name: jmeter
           #              resources:
@@ -96,49 +96,50 @@ objects:
         - type: ConfigChange
 parameters:
   - description: >-
-      Protocol
+      Protocol to reach the application (i.e.: HTTP, HTTPS)
     displayName: Protocol
     name: P_REMOTE_PROTOCOL
   - description: >-
-      Service name
-    displayName: Service name
+      Application host (i.e.: sample-webapp.com,, sample-webapp.namespace.svc)
+    displayName: Application URL/service
     name: P_REMOTE_HOST
     value: 'sample-webapp-8080-tcp'
     required: true
   - description: >-
-      Port
+      Port used to reach the application, if used with a Service or something similar
     displayName: Port
     name: P_REMOTE_PORT
     value: '8080'
+#  - description: >-
+#      Endpoint or context used to test against the application (i.e.: /test)
+#    displayName: Context
+#    name: P_CONTEXT
+#    value: ''
   - description: >-
-      Context
-    displayName: Context
-    name: P_CONTEXT
-    value: ''
-  - description: >-
-      GitHub Repo
+      URL repository (i.e.: https://github.com/MYUSER/MYREPO)
     displayName: GitHub Repo
     name: P_GITHUB_REPO
     value: 'https://github.com/ssensini/JMeter-on-OpenShift'
     required: true
   - description: >-
-      GitHub Branch
+      Used branch (i.e.: master, dev, etc.)
     displayName: GitHub Branch
     name: P_GITHUB_BRANCH
     value: 'master'
   - description: >-
-      GitHub Token
+      If repository is PRIVATE, provide a GitHub Token with the clone permissions
     displayName: GitHub Token
     name: P_GITHUB_TOKEN
     value: 'github_pat_xxx'
   - description: >-
-      Test list
+      Name of the .jmx files that should be used
     displayName: Test list
     name: P_TEST_LIST
     value: 'USE_CASE_ID'
     required: true
   - description: >-
-      Test directory
+      Name of the directory where the test plans and config files are stored. Used to create a separation between 
+      other folders within the repository.
     displayName: Test directory
     name: P_TEST_DIRECTORY
     value: 'example'
